@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Consultoria de investimentos independente e transparente. Planejamento patrimonial sob medida para proteger e multiplicar seu patrimônio."
+  />
+  <title>Leonardo Braga | Consultoria de Investimentos</title>
+
+  <!-- Fonte: Inter (fallback estilo San Francisco para Android/Windows) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- 1. Navbar Fixa -->
+  <header class="navbar">
+    <div class="container navbar__content">
+      <a href="#" class="navbar__brand">Leonardo Braga</a>
+
+      <button
+        id="nav-toggle"
+        class="navbar__toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        ☰
+      </button>
+
+      <nav id="nav-menu" class="navbar__menu" aria-label="Navegação principal">
+        <a href="#consultoria">Consultoria</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sobre">Quem sou eu</a>
+        <a href="#faq">FAQ</a>
+        <a href="#agendar" class="btn btn--primary btn--sm">Agendar reunião</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Hero (Primeira Dobra) -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="badge">Consultoria Independente • Varos</span>
+          <h1>Gestão estratégica do seu patrimônio, sem conflito de interesses.</h1>
+          <p class="hero__subtitle">
+            Acompanhamento personalizado para você investir com clareza,
+            segurança e foco nos seus objetivos de longo prazo.
+          </p>
+          <div class="hero__actions">
+            <a href="#agendar" class="btn btn--primary">Agendar reunião de diagnóstico</a>
+            <a href="#consultoria" class="btn btn--outline">Entender como funciona</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <!-- Substituir por assets/images/consultor.webp quando tiver a foto -->
+          <div class="photo-placeholder" aria-label="Espaço para foto profissional do consultor">
+            <span>Foto profissional<br />Leonardo Braga</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. O que é a Consultoria & Diferencial -->
+    <section class="section" id="consultoria">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">O Modelo Independente</span>
+          <h2>O que é a Consultoria de Investimentos?</h2>
+          <p>
+            Diferente de bancos e corretoras tradicionais, o consultor atua
+            exclusivamente do seu lado — sem ganhar comissões sobre os produtos
+            que recomenda.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <article class="card card--highlight">
+            <h3>Consultoria Independente (Fee-Based)</h3>
+            <ul class="check-list">
+              <li>Remuneração 100% transparente e alinhada ao cliente</li>
+              <li>Recomendações livres de conflito de interesses</li>
+              <li>Visão completa do patrimônio (nacional e internacional)</li>
+              <li>O dinheiro permanece sempre na sua conta e no seu CPF</li>
+            </ul>
+          </article>
+
+          <article class="card card--muted">
+            <h3>Modelo Tradicional (Comissionado)</h3>
+            <ul class="cross-list">
+              <li>Remuneração oculta embutida nos produtos vendidos</li>
+              <li>Incentivo para girar a carteira ou oferecer produtos caros</li>
+              <li>Foco limitado aos produtos da própria instituição</li>
+              <li>Pouco acompanhamento estratégico de longo prazo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Para quem é -->
+    <section class="section section--alt" id="para-quem">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Perfil de Atendimento</span>
+          <h2>Para quem é a consultoria?</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Profissionais sem tempo</h3>
+            <p>
+              Para quem foca na carreira ou empresa e precisa de um especialista
+              para estruturar e acompanhar o patrimônio com método.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Quem busca clareza e proteção</h3>
+            <p>
+              Para investidores que já aplicam, mas não sabem se estão pagando
+              taxas ocultas ou correndo riscos desnecessários.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Visão de longo prazo</h3>
+            <p>
+              Para quem quer construir independência financeira com estratégia
+              sólida, diversificação e disciplina.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Etapas após a reunião -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Passo a Passo</span>
+          <h2>Como funciona na prática</h2>
+          <p>Do primeiro contato até o acompanhamento contínuo da sua carteira.</p>
+        </div>
+
+        <ol class="steps-grid">
+          <li class="step-card">
+            <span class="step-card__number">01</span>
+            <h3>Reunião de Diagnóstico</h3>
+            <p>Conversa inicial sem compromisso para entender seu momento atual e seus objetivos.</p>
+          </li>
+
+          <li class="step-card">
+            <span class="step-card__number">02</span>
+            <h3>Coleta de Dados e Perfil</h3>
+            <p>Mapeamento detalhado de patrimônio, fluxo de caixa, tolerância a risco e metas.</p>
+          </li>
+
+          <li class="step-card">
+            <span class="step-card__number">03</span>
+            <h3>Montagem do Portfólio</h3>
+            <p>Desenho da alocação personalizada, escolhendo os melhores ativos sem conflito.</p>
+          </li>
+
+          <li class="step-card">
+            <span class="step-card__number">04</span>
+            <h3>Acompanhamento Contínuo</h3>
+            <p>Reuniões periódicas de rebalanceamento e ajustes conforme sua vida evolui.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. Quem sou eu -->
+    <section class="section section--alt" id="sobre">
+      <div class="container about-grid">
+        <div class="about__media">
+          <div class="photo-placeholder" aria-label="Foto do consultor">
+            <span>Foto secundária<br />Leonardo Braga</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="eyebrow">Sobre o Consultor</span>
+          <h2>Leonardo Braga</h2>
+          <p>
+            [MINI-BIO: conte brevemente a trajetória no mercado financeiro,
+            formação e o propósito de ajudar clientes a investirem com
+            tranquilidade e transparência.]
+          </p>
+          <ul class="credentials-list">
+            <li>Consultor de Investimentos vinculado à <strong>Varos</strong></li>
+            <li>[CERTIFICAÇÃO — ex: CEA / CFP / CVM]</li>
+            <li>[EXPERIÊNCIA / FORMAÇÃO]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Prova Social -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Prova Social</span>
+          <h2>O que dizem os clientes</h2>
+        </div>
+
+        <div class="cards-grid">
+          <blockquote class="card testimonial">
+            <p>
+              "[DEPOIMENTO 1 — ex: Finalmente entendi onde meu dinheiro estava
+              investido e parei de pagar taxas que eu nem sabia que existiam.]"
+            </p>
+            <cite>— [Nome / Iniciais], [Profissão]</cite>
+          </blockquote>
+
+          <blockquote class="card testimonial">
+            <p>
+              "[DEPOIMENTO 2 — ex: O planejamento trouxe muita clareza para
+              nossos objetivos de longo prazo. Atendimento próximo e transparente.]"
+            </p>
+            <cite>— [Nome / Iniciais], [Profissão]</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Próximas seções entram aqui -->
+  </main>
+      <!-- 8. Perguntas Frequentes (FAQ) -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <span class="eyebrow">Dúvidas Comuns</span>
+          <h2>Perguntas Frequentes</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>O dinheiro fica na minha conta ou passo para o consultor?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                O dinheiro permanece 100% do tempo na sua conta, no seu CPF e na
+                instituição financeira da sua preferência. O consultor nunca tem
+                acesso para movimentar seus recursos.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Como funciona a remuneração da consultoria?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                No modelo independente (fee-based), a remuneração é transparente e
+                acordada diretamente com você, sem comissões ocultas de bancos ou
+                corretoras.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>A primeira reunião de diagnóstico tem algum custo?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Não. A reunião inicial é gratuita e sem compromisso, justamente
+                para entendermos seu momento e avaliarmos se a consultoria faz
+                sentido para você.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Formulário de Agendamento (CTA Final) -->
+    <section class="section section--dark" id="agendar">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <span class="eyebrow">Próximo Passo</span>
+          <h2>Agende sua reunião de diagnóstico</h2>
+          <p>
+            Preencha os dados abaixo. Entrarei em contato pelo WhatsApp ou e-mail
+            para combinarmos o melhor horário.
+          </p>
+        </div>
+
+        <form id="lead-form" class="lead-form" novalidate>
+          <!-- Campo Honeypot (invisível para humanos, bloqueia bots) -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome" autocomplete="name" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp *</label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" required placeholder="voce@email.com" autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patrimonio">Patrimônio investido (opcional)</label>
+              <select id="patrimonio" name="patrimonio">
+                <option value="">Prefiro não informar</option>
+                <option value="ate-100k">Até R$ 100 mil</option>
+                <option value="100k-300k">R$ 100 mil a R$ 300 mil</option>
+                <option value="300k-1m">R$ 300 mil a R$ 1 milhão</option>
+                <option value="acima-1m">Acima de R$ 1 milhão</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="objetivo">Principal objetivo</label>
+              <select id="objetivo" name="objetivo">
+                <option value="organizar-carteira">Organizar e otimizar carteira</option>
+                <option value="comecar-investir">Começar a investir com método</option>
+                <option value="independencia">Independência financeira / aposentadoria</option>
+                <option value="protecao">Proteção patrimonial e diversificação</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group form-group--checkbox">
+            <input type="checkbox" id="lgpd" name="lgpd" required />
+            <label for="lgpd">
+              Concordo com a <a href="privacypolicy.html" target="_blank" rel="noopener">Política de Privacidade</a>
+              e autorizo o contato para agendamento da reunião. *
+            </label>
+          </div>
+
+          <button type="submit" id="submit-btn" class="btn btn--primary btn--full">
+            Solicitar agendamento
+          </button>
+
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Rodapé -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div>
+        <strong>[NOME DO CONSULTOR]</strong>
+        <p class="footer__copy">Consultoria de Investimentos • Vinculado à Varos</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="[LINK INSTAGRAM]" target="_blank" rel="noopener">Instagram</a>
+        <a href="[LINK LINKEDIN]" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="footer__disclaimer">
+        Aviso legal: Rentabilidade passada não representa garantia de rentabilidade
+        futura. As informações deste site têm caráter informativo e não constituem
+        recomendação individualizada de investimento sem prévia análise de perfil.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
