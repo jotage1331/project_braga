@@ -734,51 +734,51 @@ a {
 }
 
 /* ==========================================================================
-   14. Tema Escuro (Private Banking / Dark Wealth)
+   14. Tema Escuro Olive Green (Private Banking / Wealth)
    ========================================================================== */
 :root {
-    --color-bg: #090e1a;
-    --color-bg-alt: #0f172a;
-    --color-navy: #f8fafc;
-    /* Títulos passam a ser branco suave */
-    --color-navy-light: #e2e8f0;
-    --color-text: #e2e8f0;
-    --color-text-muted: #94a3b8;
-    --color-border: rgba(255, 255, 255, 0.08);
-    --color-accent: #c9a45c;
-    --color-accent-hover: #b38e46;
+    --color-bg: #151c16;
+    --color-bg-alt: #1c261e;
+    --color-navy: #f8faf8;
+    --color-navy-light: #e2e8e3;
+    --color-text: #e6ece7;
+    --color-text-muted: #b3c0b5;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-accent: #d4af68;
+    --color-accent-hover: #c09a52;
 }
 
 .navbar {
-    background-color: rgba(9, 14, 26, 0.85);
+    background-color: rgba(21, 28, 22, 0.88);
 }
 
 .navbar__menu {
-    background-color: #0f172a;
+    background-color: #1c261e;
 }
 
 .hero {
-    background: radial-gradient(circle at top right, #172542 0%, #090e1a 60%);
+    background: radial-gradient(circle at top right, #2a392c 0%, #151c16 65%);
 }
 
 .card,
 .step-card,
 .faq-item {
-    background-color: #131d31;
+    background-color: #232f25;
 }
 
 .card--muted {
-    background-color: #0d1424;
+    background-color: #19221a;
 }
 
 .photo-placeholder {
-    background: linear-gradient(135deg, #172542 0%, #0f172a 100%);
-    border-color: rgba(201, 164, 92, 0.35);
+    background: linear-gradient(135deg, #2a392c 0%, #1c261e 100%);
+    border-color: rgba(212, 175, 104, 0.4);
+    color: #e6ece7;
 }
 
 .btn--primary {
     background-color: var(--color-accent);
-    color: #090e1a;
+    color: #111612;
 }
 
 .btn--primary:hover {
@@ -786,21 +786,23 @@ a {
 }
 
 .section--dark {
-    background-color: #060a13;
+    background-color: #101611;
 }
 
 .footer {
-    background-color: #04070e;
+    background-color: #0b100c;
     border-top: 1px solid var(--color-border);
 }
 
-.brand-link {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+.form-group input,
+.form-group select {
+    background-color: #1c261e;
+    color: #f8faf8;
+    border-color: rgba(255, 255, 255, 0.18);
 }
 
-.brand-link:hover {
-    color: var(--color-accent);
+.form-group input::placeholder {
+    color: #96a699;
 }
 
 /* Campos do formulário adaptados ao tema escuro */
@@ -965,4 +967,219 @@ body {
     object-fit: cover;
     background-color: transparent;
     border: 1px solid rgba(212, 175, 104, 0.35);
+}
+
+/* ==========================================================================
+   16. Hero Split-Screen 50/50 (Private Banking)
+   ========================================================================== */
+.hero {
+    border-radius: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+@media (min-width: 900px) {
+    .hero {
+        padding: 0;
+    }
+
+    .hero .container.hero__grid {
+        max-width: none;
+        padding: 0;
+        gap: 0;
+        grid-template-columns: 1fr 1fr;
+        min-height: 0;
+        height: clamp(520px, 75vh, 660px);
+        align-items: stretch;
+    }
+
+    .hero__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3.5rem 3.5rem 3.5rem max(2rem, calc((100vw - var(--container-max)) / 2 + 1.25rem));
+    }
+
+    .hero__media {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero .hero__photo {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        aspect-ratio: auto;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        object-fit: cover;
+        object-position: center 20%;
+    }
+}
+
+/* ==========================================================================
+   17. Seção "Para quem é" (Estilo Checklist Editorial)
+   ========================================================================== */
+.section__header--left {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.audience-list {
+    list-style: none;
+    display: grid;
+}
+
+.audience-list li {
+    position: relative;
+    padding: 1.35rem 0 1.35rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.55;
+}
+
+.audience-list li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.audience-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 1.35rem;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.audience-list strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+/* ==========================================================================
+   18. Cards Claros (Off-White) sobre Fundo Olive Green
+   ========================================================================== */
+.card,
+.step-card,
+.faq-item {
+  background-color: #f8faf8;
+  border-color: rgba(21, 28, 22, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.card--muted {
+  background-color: #ebefeb;
+}
+
+.card--highlight {
+  border: 2px solid var(--color-accent);
+}
+
+.card h3,
+.step-card h3,
+.faq-question,
+.testimonial cite {
+  color: #151c16;
+}
+
+.card p,
+.card li,
+.step-card p,
+.faq-answer,
+.testimonial p {
+  color: #3f4d41;
+}
+
+.step-card__number {
+  color: #9e7b38;
+}
+
+/* ==========================================================================
+   19. Seção "Como funciona na prática" (Editorial 2 Colunas — Opção 2)
+   ========================================================================== */
+#como-funciona .section__header {
+  text-align: left;
+  margin: 0 0 2.5rem 0;
+}
+
+#como-funciona .steps-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+#como-funciona .step-card {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  column-gap: 1.5rem;
+  align-items: start;
+}
+
+#como-funciona .step-card:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#como-funciona .step-card__number {
+  grid-row: span 2;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-accent);
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+#como-funciona .step-card h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 0.45rem;
+}
+
+#como-funciona .step-card p {
+  color: var(--color-text-muted);
+  font-size: 0.98rem;
+}
+
+@media (min-width: 900px) {
+  #como-funciona .container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  #como-funciona .section__header {
+    position: sticky;
+    top: 110px;
+    margin-bottom: 0;
+  }
+}
+
+/* Números maiores + entrada em sequência pela direita */
+#como-funciona {
+  overflow-x: hidden;
+}
+
+#como-funciona .step-card {
+  grid-template-columns: 88px 1fr;
+}
+
+#como-funciona .step-card__number {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#como-funciona .step-card.reveal {
+  transform: translateX(48px);
+}
+
+#como-funciona .step-card.reveal.is-visible {
+  transform: translateX(0);
 }
