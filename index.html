@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Consultoria de investimentos independente e transparente. Planejamento patrimonial sob medida para proteger e multiplicar seu patrimônio."
-  />
+  <meta name="description"
+    content="Consultoria de investimentos independente e transparente. Planejamento patrimonial sob medida para proteger e multiplicar seu patrimônio." />
   <title>Leonardo Braga | Consultoria de Investimentos</title>
 
   <!-- Fonte: Inter (fallback estilo San Francisco para Android/Windows) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <!-- 1. Navbar Fixa -->
   <header class="navbar">
     <div class="container navbar__content">
       <a href="#" class="navbar__brand">Leonardo Braga</a>
 
-      <button
-        id="nav-toggle"
-        class="navbar__toggle"
-        type="button"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        aria-controls="nav-menu"
-      >
+      <button id="nav-toggle" class="navbar__toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="nav-menu">
         ☰
       </button>
 
@@ -51,7 +42,10 @@
     <section class="hero" id="inicio">
       <div class="container hero__grid">
         <div class="hero__text">
-          <span class="badge">Consultoria Independente • Varos</span>
+          <span class="badge">
+            Consultoria Independente •
+            <a href="https://varos.com.br" target="_blank" rel="noopener noreferrer" class="brand-link">Varos</a>
+          </span>
           <h1>Gestão estratégica do seu patrimônio, sem conflito de interesses.</h1>
           <p class="hero__subtitle">
             Acompanhamento personalizado para você investir com clareza,
@@ -64,12 +58,10 @@
         </div>
 
         <div class="hero__media">
-          <!-- Substituir por assets/images/consultor.webp quando tiver a foto -->
-          <div class="photo-placeholder" aria-label="Espaço para foto profissional do consultor">
-            <span>Foto profissional<br />Leonardo Braga</span>
-          </div>
+          <img src="images/consultor-hero.jpg" alt="[NOME DO CONSULTOR] — Consultor de Investimentos"
+            class="hero__photo" />
         </div>
-      </div>
+
     </section>
 
     <!-- 3. O que é a Consultoria & Diferencial -->
@@ -192,17 +184,28 @@
         </div>
 
         <div class="about__content">
-          <span class="eyebrow">Sobre o Consultor</span>
+          <span class="eyebrow">Sobre mim</span>
           <h2>Leonardo Braga</h2>
-          <p>
-            [MINI-BIO: conte brevemente a trajetória no mercado financeiro,
-            formação e o propósito de ajudar clientes a investirem com
-            tranquilidade e transparência.]
-          </p>
           <ul class="credentials-list">
-            <li>Consultor de Investimentos vinculado à <strong>Varos</strong></li>
-            <li>[CERTIFICAÇÃO — ex: CEA / CFP / CVM]</li>
-            <li>[EXPERIÊNCIA / FORMAÇÃO]</li>
+            <li>
+              Meu nome é Leonardo, sou consultor de investimentos e apaixonado pelo mercado financeiro e de
+              investimentos.
+              Atuei por 5 anos como Bombeiro Militar do Estado de São Paulo, experiência que me ensinou a lidar com
+              pressão, analisar riscos e tomar decisões com responsabilidade e estratégia.</br>
+              Hoje aplico esses mesmos princípios na consultoria de investimentos, acreditando que investir vai muito
+              além
+              de buscar rentabilidade: trata-se de construir patrimônio, segurança e planejamento para o futuro.</br>
+              Meu objetivo é ajudar investidores a tomarem decisões mais inteligentes e alinhadas aos seus objetivos,
+              por
+              meio de uma consultoria técnica, personalizada e sem conflito de interesses.
+            <li>
+              Consultor de Investimentos parceiro
+              <a href="https://varos.com.br" target="_blank" rel="noopener noreferrer"
+                class="brand-link"><strong>Varos</strong></a>
+            </li>
+            <li>Formação: Gestor Financeiro - Universidade Mackenzie ; </li>
+            <li>Especialista em investimentos e alocação de ativos </li>
+            <li>Certificações CPRO - R, CPRO - I</li>
           </ul>
         </div>
       </div>
@@ -238,143 +241,146 @@
 
     <!-- Próximas seções entram aqui -->
   </main>
-      <!-- 8. Perguntas Frequentes (FAQ) -->
-    <section class="section section--alt" id="faq">
-      <div class="container container--narrow">
-        <div class="section__header">
-          <span class="eyebrow">Dúvidas Comuns</span>
-          <h2>Perguntas Frequentes</h2>
+  <!-- 8. Perguntas Frequentes (FAQ) -->
+  <section class="section section--alt" id="faq">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <span class="eyebrow">Dúvidas Comuns</span>
+        <h2>Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>O dinheiro fica na minha conta ou passo para o consultor?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>
+              O dinheiro permanece 100% do tempo na sua conta, no seu CPF e na
+              instituição financeira da sua preferência. O consultor nunca tem
+              acesso para movimentar seus recursos.
+            </p>
+          </div>
         </div>
 
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>O dinheiro fica na minha conta ou passo para o consultor?</span>
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" hidden>
-              <p>
-                O dinheiro permanece 100% do tempo na sua conta, no seu CPF e na
-                instituição financeira da sua preferência. O consultor nunca tem
-                acesso para movimentar seus recursos.
-              </p>
-            </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Como funciona a remuneração da consultoria?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>
+              No modelo independente (fee-based), a remuneração é transparente e
+              acordada diretamente com você, sem comissões ocultas de bancos ou
+              corretoras.
+            </p>
           </div>
+        </div>
 
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Como funciona a remuneração da consultoria?</span>
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" hidden>
-              <p>
-                No modelo independente (fee-based), a remuneração é transparente e
-                acordada diretamente com você, sem comissões ocultas de bancos ou
-                corretoras.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>A primeira reunião de diagnóstico tem algum custo?</span>
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" hidden>
-              <p>
-                Não. A reunião inicial é gratuita e sem compromisso, justamente
-                para entendermos seu momento e avaliarmos se a consultoria faz
-                sentido para você.
-              </p>
-            </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>A primeira reunião de diagnóstico tem algum custo?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>
+              Não. A reunião inicial é gratuita e sem compromisso, justamente
+              para entendermos seu momento e avaliarmos se a consultoria faz
+              sentido para você.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 9. Formulário de Agendamento (CTA Final) -->
-    <section class="section section--dark" id="agendar">
-      <div class="container container--narrow">
-        <div class="section__header">
-          <span class="eyebrow">Próximo Passo</span>
-          <h2>Agende sua reunião de diagnóstico</h2>
-          <p>
-            Preencha os dados abaixo. Entrarei em contato pelo WhatsApp ou e-mail
-            para combinarmos o melhor horário.
-          </p>
+  <!-- 9. Formulário de Agendamento (CTA Final) -->
+  <section class="section section--dark" id="agendar">
+    <div class="container container--narrow">
+      <div class="section__header">
+        <span class="eyebrow">Próximo Passo</span>
+        <h2>Agende sua reunião de diagnóstico</h2>
+        <p>
+          Preencha os dados abaixo. Entrarei em contato pelo WhatsApp ou e-mail
+          para combinarmos o melhor horário.
+        </p>
+      </div>
+
+      <form id="lead-form" class="lead-form" novalidate>
+        <!-- Campo Honeypot (invisível para humanos, bloqueia bots) -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
         </div>
 
-        <form id="lead-form" class="lead-form" novalidate>
-          <!-- Campo Honeypot (invisível para humanos, bloqueia bots) -->
-          <div class="hp-field" aria-hidden="true">
-            <label for="website">Website</label>
-            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        <div class="form-group">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome" autocomplete="name" />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp *</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999" autocomplete="tel" />
           </div>
 
           <div class="form-group">
-            <label for="nome">Nome completo *</label>
-            <input type="text" id="nome" name="nome" required placeholder="Seu nome" autocomplete="name" />
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required placeholder="voce@email.com" autocomplete="email" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="patrimonio">Patrimônio investido (opcional)</label>
+            <select id="patrimonio" name="patrimonio">
+              <option value="">Prefiro não informar</option>
+              <option value="ate-100k">Até R$ 100 mil</option>
+              <option value="100k-300k">R$ 100 mil a R$ 300 mil</option>
+              <option value="300k-1m">R$ 300 mil a R$ 1 milhão</option>
+              <option value="acima-1m">Acima de R$ 1 milhão</option>
+            </select>
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="whatsapp">WhatsApp *</label>
-              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999" autocomplete="tel" />
-            </div>
-
-            <div class="form-group">
-              <label for="email">E-mail *</label>
-              <input type="email" id="email" name="email" required placeholder="voce@email.com" autocomplete="email" />
-            </div>
+          <div class="form-group">
+            <label for="objetivo">Principal objetivo</label>
+            <select id="objetivo" name="objetivo">
+              <option value="organizar-carteira">Organizar e otimizar carteira</option>
+              <option value="comecar-investir">Começar a investir com método</option>
+              <option value="independencia">Independência financeira / aposentadoria</option>
+              <option value="protecao">Proteção patrimonial e diversificação</option>
+            </select>
           </div>
+        </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="patrimonio">Patrimônio investido (opcional)</label>
-              <select id="patrimonio" name="patrimonio">
-                <option value="">Prefiro não informar</option>
-                <option value="ate-100k">Até R$ 100 mil</option>
-                <option value="100k-300k">R$ 100 mil a R$ 300 mil</option>
-                <option value="300k-1m">R$ 300 mil a R$ 1 milhão</option>
-                <option value="acima-1m">Acima de R$ 1 milhão</option>
-              </select>
-            </div>
+        <div class="form-group form-group--checkbox">
+          <input type="checkbox" id="lgpd" name="lgpd" required />
+          <label for="lgpd">
+            Concordo com a <a href="privacypolicy.html" target="_blank" rel="noopener">Política de Privacidade</a>
+            e autorizo o contato para agendamento da reunião. *
+          </label>
+        </div>
 
-            <div class="form-group">
-              <label for="objetivo">Principal objetivo</label>
-              <select id="objetivo" name="objetivo">
-                <option value="organizar-carteira">Organizar e otimizar carteira</option>
-                <option value="comecar-investir">Começar a investir com método</option>
-                <option value="independencia">Independência financeira / aposentadoria</option>
-                <option value="protecao">Proteção patrimonial e diversificação</option>
-              </select>
-            </div>
-          </div>
+        <button type="submit" id="submit-btn" class="btn btn--primary btn--full">
+          Solicitar agendamento
+        </button>
 
-          <div class="form-group form-group--checkbox">
-            <input type="checkbox" id="lgpd" name="lgpd" required />
-            <label for="lgpd">
-              Concordo com a <a href="privacypolicy.html" target="_blank" rel="noopener">Política de Privacidade</a>
-              e autorizo o contato para agendamento da reunião. *
-            </label>
-          </div>
-
-          <button type="submit" id="submit-btn" class="btn btn--primary btn--full">
-            Solicitar agendamento
-          </button>
-
-          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
   </main>
 
   <!-- 10. Rodapé -->
   <footer class="footer">
     <div class="container footer__content">
       <div>
-        <strong>[NOME DO CONSULTOR]</strong>
-        <p class="footer__copy">Consultoria de Investimentos • Vinculado à Varos</p>
+        <strong>Leonardo Braga</strong>
+        <p class="footer__copy">
+          Consultoria de Investimentos • Vinculado à
+          <a href="https://varos.com.br" target="_blank" rel="noopener noreferrer" class="brand-link">Varos</a>
+        </p>
       </div>
 
       <div class="footer__links">
@@ -395,4 +401,5 @@
 
   <script src="js/main.js" defer></script>
 </body>
+
 </html>
