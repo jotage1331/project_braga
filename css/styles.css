@@ -857,3 +857,112 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+/* Corrige o fundo do menu no desktop e deixa botões em formato pílula */
+@media (min-width: 768px) {
+    .navbar__menu {
+        background-color: transparent;
+    }
+}
+
+.btn {
+    border-radius: 999px;
+}
+
+.navbar__menu a:not(.btn) {
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar__menu a:not(.btn):hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+/* Mini-cards de credenciais (Formação e Certificações) */
+.credentials-grid {
+    display: grid;
+    gap: 0.85rem;
+    margin-top: 1.5rem;
+}
+
+.credential-card {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.85rem 1rem;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.credential-card:hover {
+    border-color: rgba(212, 175, 104, 0.45);
+    transform: translateY(-2px);
+}
+
+.credential-card__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgba(212, 175, 104, 0.12);
+    border: 1px solid rgba(212, 175, 104, 0.3);
+    color: var(--color-accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.credential-card__icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.credential-card strong {
+    display: block;
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.25;
+}
+
+.credential-card span {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+}
+
+@media (min-width: 600px) {
+    .credentials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.credential-card__logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    flex-shrink: 0;
+}
+
+.credential-card__logo--dark {
+    background-color: #05070b;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.credential-card span {
+    display: block;
+    line-height: 1.3;
+    margin-top: 0.2rem;
+}
+
+.credential-card__logo--full {
+    padding: 0;
+    object-fit: cover;
+    background-color: transparent;
+    border: 1px solid rgba(212, 175, 104, 0.35);
+}
