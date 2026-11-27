@@ -1361,42 +1361,10 @@ body {
 }
 
 /* ==========================================================================
-   22. Otimização de Espaçamento Vertical
+   22. Ajustes Finos (Título Depoimentos + FAQ Compacto)
    ========================================================================== */
-.section {
-    padding: 3.25rem 0;
-}
-
-.section__header {
-    margin: 0 auto 2rem;
-}
-
 #depoimentos .section__header {
     max-width: 900px;
-}
-
-.section__header--left {
-    margin-bottom: 1.5rem;
-}
-
-#agendar .section__header {
-    margin-bottom: 1.75rem;
-}
-
-.card {
-    padding: 1.65rem;
-}
-
-.audience-list li {
-    padding: 1rem 0 1rem 2rem;
-}
-
-.audience-list li::before {
-    top: 1rem;
-}
-
-#como-funciona .step-card {
-    padding: 1.35rem 0;
 }
 
 #faq {
@@ -1418,8 +1386,4 @@ body {
 
 .faq-answer {
     padding: 0 1.25rem 1rem;
-}
-
-.footer {
-    padding: 2.25rem 0 1.5rem;
 }
