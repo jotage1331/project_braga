@@ -1177,10 +1177,10 @@ body {
     opacity: 0;
     transform: translateY(16px) scale(0.97);
     transition:
-        opacity 0.28s ease,
-        transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
-        overlay 0.28s allow-discrete,
-        display 0.28s allow-discrete;
+        opacity 0.45s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        overlay 0.45s allow-discrete,
+        display 0.45s allow-discrete;
 }
 
 .modal[open] {
@@ -1193,9 +1193,9 @@ body {
     backdrop-filter: blur(6px);
     opacity: 0;
     transition:
-        opacity 0.28s ease,
-        overlay 0.28s allow-discrete,
-        display 0.28s allow-discrete;
+        opacity 0.45s ease,
+        overlay 0.45s allow-discrete,
+        display 0.45s allow-discrete;
 }
 
 .modal[open]::backdrop {
