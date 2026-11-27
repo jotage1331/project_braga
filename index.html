@@ -43,8 +43,7 @@
       <div class="container hero__grid">
         <div class="hero__text">
           <span class="badge">
-            Consultoria de Investimentos • Parceiro
-            <a href="https://varos.com.br" target="_blank" rel="noopener noreferrer" class="brand-link">Varos</a>
+            Consultoria de Investimentos 
           </span>
           <h1>Gestão estratégica do seu patrimônio, sem conflito de interesses.</h1>
           <p class="hero__subtitle">
@@ -52,7 +51,9 @@
             segurança e foco nos seus objetivos de longo prazo.
           </p>
           <div class="hero__actions">
-            <a href="#agendar" class="btn btn--primary">Agende uma reunião</a>
+            <button type="button" class="btn btn--primary" data-open-modal="lead-modal">
+              Agende uma reunião
+            </button>
           </div>
         </div>
 
@@ -289,16 +290,36 @@
     </div>
   </section>
 
-  <!-- 9. Formulário de Agendamento (CTA Final) -->
-  <section class="section section--dark" id="agendar">
+  <section class="section" id="agendar">
     <div class="container container--narrow">
       <div class="section__header">
         <span class="eyebrow">Próximo Passo</span>
-        <h2>Agende sua reunião de diagnóstico</h2>
+        <h2>Agende sua reunião</h2>
         <p>
-          Preencha os dados abaixo. Entrarei em contato pelo WhatsApp ou e-mail
-          para combinarmos o melhor horário.
+          Clique no botão abaixo para informar seus dados. Entrarei em contato pelo WhatsApp ou e-mail para agendarmos o
+          melhor horário.
         </p>
+      </div>
+
+      <div class="cta-actions">
+        <button type="button" class="btn btn--primary" data-open-modal="lead-modal">
+          Agendar reunião
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal do Formulário de Agendamento -->
+  <dialog id="lead-modal" class="modal" aria-labelledby="modal-title">
+    <div class="modal__card">
+      <div class="modal__header">
+        <div>
+          <span class="eyebrow">Reunião</span>
+          <h3 id="modal-title">Informe seus dados</h3>
+        </div>
+        <button type="button" class="modal__close" data-close-modal aria-label="Fechar janela">
+          ✕
+        </button>
       </div>
 
       <form id="lead-form" class="lead-form" novalidate>
@@ -363,8 +384,7 @@
         <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
-  </section>
-  </main>
+  </dialog>
 
   <!-- 10. Rodapé -->
   <footer class="footer">

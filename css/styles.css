@@ -1145,52 +1145,130 @@ body {
 }
 
 /* ==========================================================================
-   20. Destaque de Conversão no Formulário (Card Claro + Borda Dourada)
+   20. Seção CTA Final + Modal de Agendamento (<dialog>)
    ========================================================================== */
-#agendar {
-    background: radial-gradient(circle at top center, #223024 0%, #101611 70%);
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
 }
 
-#agendar .lead-form {
+#agendar .btn--primary {
+    background-color: var(--color-accent);
+    color: #111612;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    box-shadow: 0 14px 32px rgba(212, 175, 104, 0.22);
+}
+
+#agendar .btn--primary:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.modal {
+    margin: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    width: min(92vw, 620px);
+    max-width: none;
+    max-height: 90vh;
+    overflow: visible;
+}
+
+.modal::backdrop {
+    background: rgba(11, 16, 12, 0.78);
+    backdrop-filter: blur(6px);
+}
+
+.modal__card {
     background-color: #f8faf8;
     border: 1.5px solid rgba(212, 175, 104, 0.55);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 0 6px rgba(212, 175, 104, 0.08);
-    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 0 6px rgba(212, 175, 104, 0.08);
+    padding: 2rem;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
-#agendar .lead-form label {
+.modal__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal__header .eyebrow {
+    margin-bottom: 0.25rem;
+    color: #8f6d2e;
+}
+
+.modal__header h3 {
+    color: #151c16;
+    font-size: 1.45rem;
+}
+
+.modal__close {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: 1px solid #cbd5ce;
+    background: #ffffff;
+    color: #151c16;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.modal__close:hover {
+    background-color: #ebefeb;
+    border-color: #151c16;
+}
+
+.modal .lead-form {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.modal .lead-form label {
     color: #151c16;
     font-weight: 600;
 }
 
-#agendar .form-group input,
-#agendar .form-group select {
+.modal .form-group input,
+.modal .form-group select {
     background-color: #ffffff;
     color: #151c16;
     border: 1.5px solid #cbd5ce;
 }
 
-#agendar .form-group input::placeholder {
+.modal .form-group input::placeholder {
     color: #6b7b6e;
 }
 
-#agendar .form-group input:focus,
-#agendar .form-group select:focus {
+.modal .form-group input:focus,
+.modal .form-group select:focus {
     border-color: var(--color-accent);
     outline: 3px solid rgba(212, 175, 104, 0.25);
 }
 
-#agendar .form-group--checkbox label {
+.modal .form-group--checkbox label {
     font-weight: 400;
     color: #3f4d41;
 }
 
-#agendar .form-group--checkbox a {
+.modal .form-group--checkbox a {
     color: #8f6d2e;
     font-weight: 600;
 }
 
-#agendar .btn--primary {
+.modal .btn--primary {
     background-color: #151c16;
     color: #ffffff;
     padding: 1rem 1.5rem;
@@ -1198,16 +1276,16 @@ body {
     box-shadow: 0 10px 25px rgba(21, 28, 22, 0.25);
 }
 
-#agendar .btn--primary:hover {
+.modal .btn--primary:hover {
     background-color: #243326;
 }
 
-#agendar .form-status--success {
+.modal .form-status--success {
     color: #15803d;
     font-weight: 600;
 }
 
-#agendar .form-status--error {
+.modal .form-status--error {
     color: #b91c1c;
     font-weight: 600;
 }

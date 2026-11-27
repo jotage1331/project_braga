@@ -152,4 +152,34 @@ document.addEventListener("DOMContentLoaded", () => {
             observer.observe(el);
         });
     }
+
+    // =========================================================================
+    // 6. Modal de Agendamento (<dialog>)
+    // =========================================================================
+    const openModalButtons = document.querySelectorAll("[data-open-modal]");
+
+    openModalButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const modal = document.getElementById(button.dataset.openModal);
+            if (modal) {
+                modal.showModal();
+            }
+        });
+    });
+
+    const modals = document.querySelectorAll("dialog.modal");
+
+    modals.forEach((modal) => {
+        const closeBtn = modal.querySelector("[data-close-modal]");
+        if (closeBtn) {
+            closeBtn.addEventListener("click", () => modal.close());
+        }
+
+        // Fecha ao clicar fora do card (no backdrop)
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.close();
+            }
+        });
+    });
 });
